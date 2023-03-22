@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Gallery</title>
+    <style>
+      /* Style for thumbnail images */
+      .thumbnail {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        float: left;
+        border: 5px solid #fff;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        background-color: #fff;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      /* Style for the container div */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #204345;
+      }
+      
+      /* Style for headings */
+      h1, h2 {
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: normal;
+        margin-top: 0;
+        width: 100%;
+      }
+      
+      /* Style for divs containing images */
+      .image-set {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
+      }
+      
+      /* Style for "Go to top" link */
+      #go-to-top {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        color: #FFFFFF;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        /* Adjust thumbnail size for mobile screens */
+        .thumbnail {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Photo Gallery</h1>
+      <div class="image-set">
+        <h2>Field Trip</h2>
+        <a href="IMAGES/FT1.jpg" target="_blank" style="background-image: url('IMAGES/FT1.jpg')" class="thumbnail"></a>
+        <a href="IMAGES/FT2.jpg" target="_blank" style="background-image: url('IMAGES/FT2.jpg')" class="thumbnail"></a>
+      </div>
+      <div class="image-set">
+        <h2>Birthday Pictures</h2>
+        <a href="IMAGES/BPIC1.jpg" target="_blank" style="background-image: url('IMAGES/BPIC1.jpg')" class="thumbnail"></a>
+        <a href="IMAGES/BPIC2.jpg" target="_blank" style="background-image: url('IMAGES/BPIC2.jpg')" class="thumbnail"></a>
+      </div>
+    </div>
+  </body>
+</html>
